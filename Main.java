@@ -1,6 +1,7 @@
 //importar del nombre paquete.nombreClase
 import Celcius_farenheit.farenheit_celcius;
 import Lista.ListadeCompras;
+import conversor_moneda.Conversor_monedas;
 import interface_grafica.Baner;
 import medidas.mediciones;
 import opciones.ListaOPciones;
@@ -18,7 +19,7 @@ public class Main {
                 "Calculadora", "IMC",
                 "Farenheit / Celsius", "Medidas",
                 "Calcular edad", "Listado",
-                "Opción_7", "Opción_8",
+                "Conversos Monedas", "Opción_8",
                 "Opción_9", "Salir" };
 
         boolean programa=true;
@@ -63,7 +64,7 @@ public class Main {
                     ListadeCompras.crearLista();
                     break;
                 case 7:
-                    System.out.println("opción 7");
+                    Conversor_monedas.monedas();
                     break;
                 case 8:
                     System.out.println("opción 8");
