@@ -1,4 +1,5 @@
 //importar del nombre paquete.nombreClase
+import calculadora.calcularEdad;
 import conversor.ConversorGrados;
 import lista.ListadeCompras;
 import conversor.Conversor_monedas;
@@ -58,7 +59,7 @@ public class Main {
                     Longitudes.longitud();
                     break;
                 case 5:
-                    System.out.println("opción 5");
+                    calcularEdad.programa();
                     break;
                 case 6:
                     ListadeCompras.crearLista();
