@@ -1,12 +1,12 @@
 //importar del nombre paquete.nombreClase
-import Celcius_farenheit.farenheit_celcius;
-import Lista.ListadeCompras;
-import conversor_moneda.Conversor_monedas;
+import conversor.ConversorGrados;
+import lista.ListadeCompras;
+import conversor.Conversor_monedas;
 import interface_grafica.Baner;
-import medidas.mediciones;
-import opciones.ListaOPciones;
-import programas.IMC;
-import matematicas.Mate;
+import conversor.Longitudes;
+import mis_metodos.ListaOPciones;
+import iMC.IMC;
+import calculadora.Mate;
 
 //importar de nombreLibreria.Nombrepaquete.NombreClase
 import java.util.Scanner;
@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args) {
 
         String[] listaDeOpciones = {
-                "Calculadora", "IMC",
+                "calculadora", "iMC",
                 "Farenheit / Celsius", "Medidas",
                 "Calcular edad", "Listado",
                 "Conversos Monedas", "Opción_8",
@@ -52,10 +52,10 @@ public class Main {
 
                     break;
                 case 3:
-                    farenheit_celcius.grados();
+                    ConversorGrados.grados();
                     break;
                 case 4:
-                    mediciones.longitud();
+                    Longitudes.longitud();
                     break;
                 case 5:
                     System.out.println("opción 5");

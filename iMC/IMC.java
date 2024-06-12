@@ -1,4 +1,4 @@
-package programas;
+package iMC;
 
 import java.util.Scanner;
 

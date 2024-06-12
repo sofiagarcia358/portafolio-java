@@ -1,10 +1,10 @@
-package Celcius_farenheit;
+package conversor;
 
-import opciones.ListaOPciones;
+import mis_metodos.ListaOPciones;
 
 import java.util.Scanner;
 
-public class farenheit_celcius {
+public class ConversorGrados {
 
     public static void grados() {
         System.out.println("Operaciones Disponibles: ");

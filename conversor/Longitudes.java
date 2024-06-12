@@ -1,10 +1,10 @@
-package medidas;
+package conversor;
 
-import opciones.ListaOPciones;
+import mis_metodos.ListaOPciones;
 
 import java.util.Scanner;
 
-public class mediciones {
+public class Longitudes {
     public static void longitud() {
         System.out.println("Operaciones Disponibles: ");
         String[] operacion = {"Km/Mtrs", "Mtrs/Km", "Km/cm", "cm/km"};
