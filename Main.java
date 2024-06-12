@@ -8,6 +8,7 @@ import conversor.Longitudes;
 import mis_metodos.ListaOPciones;
 import iMC.IMC;
 import calculadora.Mate;
+import mis_metodos.MisMetodos;
 
 //importar de nombreLibreria.Nombrepaquete.NombreClase
 import java.util.Scanner;
@@ -26,12 +27,11 @@ public class Main {
         boolean programa=true;
 //el do se ejecuta y el while pregunta si se debe volver a ejecutar.
         do{
-                //la clase baner.mensaje()(este es un método)
+                MisMetodos.limpiarConsola();
                 Baner.mensaje();
+                MisMetodos.imprimirLinea();
 
-                //listaOPciones=clase, .cargarOpciones()=es un metodo.
                 ListaOPciones.cargarOpciones(listaDeOpciones);
-
 
             //Scanner en este caso esta creando un objeto
             //System imprime en consola un mensaje.
@@ -40,7 +40,8 @@ public class Main {
             Scanner intOpcion = new Scanner(System.in);
             System.out.print("[?]: ");
             int opcion = intOpcion.nextInt();
-            System.out.println("-------------------------------------------------");
+            MisMetodos.imprimirLinea();
+
 
             //cargar opcion del usuario
             switch(opcion){
