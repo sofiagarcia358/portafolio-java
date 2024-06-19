@@ -1,4 +1,5 @@
 //importar del nombre paquete.nombreClase
+import Libros.Biblioteca;
 import calculadora.calcularEdad;
 import conversor.ConversorGrados;
 import lista.ListadeCompras;
@@ -21,7 +22,7 @@ public class Main {
                 "calculadora", "iMC",
                 "Farenheit / Celsius", "Medidas",
                 "Calcular edad", "Listado",
-                "Conversos Monedas", "Opción_8",
+                "Conversos Monedas", "Biblioteca",
                 "Opción_9", "Salir" };
 
         boolean programa=true;
@@ -69,7 +70,7 @@ public class Main {
                     Conversor_monedas.monedas();
                     break;
                 case 8:
-                    System.out.println("opción 8");
+                    Biblioteca.programa();
                     break;
                 case 9:
                     System.out.println("opción 9");
