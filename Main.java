@@ -1,5 +1,6 @@
 //importar del nombre paquete.nombreClase
 import Libros.Biblioteca;
+import Estudios.primero_primaria;
 import calculadora.calcularEdad;
 import conversor.ConversorGrados;
 import lista.ListadeCompras;
@@ -73,7 +74,9 @@ public class Main {
                     Biblioteca.programa();
                     break;
                 case 9:
-                    System.out.println("opción 9");
+                    primero_primaria.niños();
+
+                    ;
                     break;
                 case 10:
                     programa=false;
