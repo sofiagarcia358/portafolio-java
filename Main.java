@@ -12,7 +12,11 @@ import iMC.IMC;
 import calculadora.Mate;
 import mis_metodos.MisMetodos;
 
+import javax.swing.*;
+import javax.swing.plaf.basic.BasicComboBoxRenderer;
+
 //importar de nombreLibreria.Nombrepaquete.NombreClase
+import java.awt.*;
 import java.util.Scanner;
 
 //método main
@@ -25,6 +29,43 @@ public class Main {
                 "Calcular edad", "Listado",
                 "Conversos Monedas", "Biblioteca",
                 "Opción_9", "Salir" };
+
+        //sección grafica
+
+        //VENTANA
+        JFrame frame = new JFrame("Mi Ventana");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 300);
+        frame.setLayout(new BorderLayout());
+
+        // Panel para el título
+        JPanel titlePanel = new JPanel();
+        JLabel titleLabel = new JLabel("SOFIA");
+        titlePanel.add(titleLabel);
+
+        // Panel para el listado
+        JPanel listPanel = new JPanel();
+        listPanel.setLayout(new GridLayout(3, 2, 5, 5)); // 3 filas, 2 columnas, 5px de espacio
+
+        for (int i = 1; i <= 6; i++) {
+            listPanel.add(new JLabel("Elemento " + i));
+        }
+
+        // Panel para el botón
+        JPanel buttonPanel = new JPanel();
+        buttonPanel.setLayout(new BorderLayout());
+        JButton button = new JButton("SALIR");
+        buttonPanel.add(button, BorderLayout.EAST);
+
+        // Añadir los paneles al frame principal
+        frame.add(titlePanel, BorderLayout.NORTH);
+        frame.add(listPanel, BorderLayout.CENTER);
+        frame.add(buttonPanel, BorderLayout.SOUTH);
+
+        // Hacer visible la ventana
+        frame.setVisible(true);
+
+
 
         boolean programa=true;
 //el do se ejecuta y el while pregunta si se debe volver a ejecutar.
